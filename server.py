@@ -1,5 +1,4 @@
 from flask import Flask,render_template,request
-import json
 import tensorflow as tf
 import pandas as pd
 import numpy as np
@@ -24,16 +23,19 @@ def result():
             #we gonna get tesl/apple/iam
             print("etc= "+etc)
             if(etc=='tesla'):
-                modelname='models\atesla.h5'
+                modelname='models\tesla.h5'
                 df= pd.read_csv("datasets\TSLA.csv")
+
             elif(etc=="apple"):
                 modelname='models\apple.h5'
                 df= pd.read_csv("datasets\AAPL.csv")
+
             elif(etc=="bank"):
-                modelname='models\abank.h5'
+                modelname='models\bank.h5'
                 df=pd.read_csv("datasets\BAC.csv")
+
             else:
-                modelname='models\aiam.h5'
+                modelname='models\iam.h5'
                 df= pd.read_csv("datasets\IAM.csv")
             #prediction
 

@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <title>stock market Statistics</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 </head>
 <body>
+    <style>
+        h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+.chart{
+    /*margin: 0 auto;*/
+   /* display: flex;*/
+    justify-content: center;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+    </style>
 <h1>stock market prediction</h1>
 <h2>Select your entreprise</h2>
 <form action="/" method="post">
@@ -18,7 +39,7 @@
     
     <input type="submit" value="OK">
 </form>
-<div>
+<div class="chart">
     <h2>stock market for {{etp}}</h2>
     <canvas id="myChart" ></canvas>
 </div>
