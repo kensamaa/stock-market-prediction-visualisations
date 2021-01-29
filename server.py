@@ -23,20 +23,20 @@ def result():
             #we gonna get tesl/apple/iam
             print("etc= "+etc)
             if(etc=='tesla'):
-                modelname='models\tesla.h5'
-                df= pd.read_csv("datasets\TSLA.csv")
+                modelname='tesla.h5'
+                df= pd.read_csv("TSLA.csv")
 
             elif(etc=="apple"):
-                modelname='models\apple.h5'
-                df= pd.read_csv("datasets\AAPL.csv")
+                modelname='apple.h5'
+                df= pd.read_csv("AAPL.csv")
 
             elif(etc=="bank"):
-                modelname='models\bank.h5'
-                df=pd.read_csv("datasets\BAC.csv")
+                modelname='bank.h5'
+                df=pd.read_csv("BAC.csv")
 
             else:
-                modelname='models\iam.h5'
-                df= pd.read_csv("datasets\IAM.csv")
+                modelname='iam.h5'
+                df= pd.read_csv("IAM.csv")
             #prediction
 
             with graph.as_default():
